@@ -21,6 +21,8 @@ humans = [
     Human("David", 31),
 ]
 
+newhumans = []
+
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
 print("Starts with D:")
@@ -52,8 +54,8 @@ print(c)
 print("Ages plus 10:")
 d = []
 for x in range(10):
-    humans[x].age += 10
-    d.append(humans[x].age)
+    newage = humans[x].age + 10
+    d.append(newage)
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -71,7 +73,8 @@ print("Names and ages between 27 and 32:")
 f = []
 for x in range(10):
     if humans[x].age >= 27 and humans[x].age <=32:
-        f.append(humans[x].name+','+ str(humans[x].age))
+        empty_tuple = (humans[x].name, humans[x].age)
+        f.append(empty_tuple)
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
@@ -80,7 +83,10 @@ print(f)
 print("All names uppercase:")
 g = []
 for x in range(10):
-     g.append(humans[x].name.upper()+','+str(humans[x].age))
+    #  newhumans[x] = humans[x]
+    #  newhumans[x].name = humans[x].name.upper
+    g.append(humans[x].name.upper()+','+str(humans[x].age))
+    #  g.append(newhuman[x])
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
