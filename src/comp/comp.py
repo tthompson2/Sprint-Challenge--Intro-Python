@@ -80,7 +80,7 @@ print(f)
 print("All names uppercase:")
 g = []
 for x in range(10):
-     g.append(humans[x].name.upper())
+     g.append(humans[x].name.upper()+','+str(humans[x].age))
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
