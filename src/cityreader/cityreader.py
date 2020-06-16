@@ -5,11 +5,11 @@ class City:
 
   def __init__(self, n,  lat, lon):
     self.name = n
-    self.latitude = lat
-    self.longitude = lon
+    self.lat = lat
+    self.lon = lon
 
   def __str__(self):
-    return f"{self.name}, {self.latitude}, {self.longitude}"
+    return f"{self.name}, {self.lat}, {self.lon}"
 
 # We have a collection of US cities with population over 750,000 stored in the
 # file "cities.csv". (CSV stands for "comma-separated values".)

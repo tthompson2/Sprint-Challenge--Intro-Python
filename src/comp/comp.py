@@ -26,7 +26,7 @@ newhumans = []
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
 print("Starts with D:")
-a = []
+# a = [x for x in humans if humans[x].name[0:1] == 'D']
 for x in range(10):
     if humans[x].name[0:1] == 'D':
         a.append(humans[x].name)
