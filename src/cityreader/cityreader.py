@@ -38,9 +38,12 @@ def cityreader(cities=[]):
     counter=1
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
-      city_instance = City(row[0], row[3], row[4])
+      if(row[0]=='city' or row[3]=='lat' or row[4]=='lon'):
+        counter = counter + 1
+      else: 
+        city_instance = City(row[0], row[3], row[4])
       # print(row[0], row[3], row[4])
-      cities.append(city_instance)
+        cities.append(city_instance)
     
   return cities
 

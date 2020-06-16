@@ -85,7 +85,7 @@ g = []
 for x in range(10):
     #  newhumans[x] = humans[x]
     #  newhumans[x].name = humans[x].name.upper
-    human_instance = Human(humans[x].name.upper(), humans[x].age)
+    human_instance = Human(humans[x].name.upper(), humans[x].age+5)
     g.append(human_instance)
     #  g.append(newhuman[x])
 print(g)
