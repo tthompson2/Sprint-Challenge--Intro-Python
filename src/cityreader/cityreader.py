@@ -37,9 +37,9 @@ def cityreader(cities=[]):
   with open('cities.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
-      cities = City(row[0], row[3], row[4])
+      city_instance= City(row[0], row[3], row[4])
       # print(row[0], row[3], row[4])
-      print(cities)
+      cities.append(city_instance)
     
   return cities
 
