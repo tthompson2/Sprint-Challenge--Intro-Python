@@ -41,7 +41,7 @@ def cityreader(cities=[]):
       if(row[0]=='city' or row[3]=='lat' or row[4]=='lon'):
         counter = counter + 1
       else: 
-        city_instance = City(row[0], row[3], row[4])
+        city_instance = City(row[0], float(row[3]), float(row[4]))
       # print(row[0], row[3], row[4])
         cities.append(city_instance)
     
