@@ -19,7 +19,7 @@
 # Put a comment noting which class is the base class
 
 class Vehicle:
-    # This is the base class   
+   
     print('pass')
 
 class FlightVehicle(Vehicle):
