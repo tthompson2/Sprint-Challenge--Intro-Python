@@ -42,7 +42,6 @@ def cityreader(cities=[]):
         counter = counter + 1
       else: 
         city_instance = City(row[0], float(row[3]), float(row[4]))
-      # print(row[0], row[3], row[4])
         cities.append(city_instance)
     
   return cities
@@ -102,9 +101,4 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   # Go through each city and check to see if it falls within 
   # the specified coordinates.
 
-  for w in within:
-    print(w)
-
   return within
-
-# cityreader_stretch(lat1, lon1, lat2, lon2, cities)
